@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>환영 문구 띄우기</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+
+</head>
+
+<body>
+    <form id="inputname">
+        <input type="text" id="name" placeholder="What's your name?" maxlength="15" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2 id="greeting"></h2>
+
+    <script>
+        document.getElementById("inputname").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var name = document.getElementById("name").value;
+            document.getElementById("greeting").textContent = "환영합니다, " + name + "!";
+            document.getElementById("name").value = '';
+        });
+    </script>
+
+</body>
+
+</html>
