@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.bar{
+    height: 150px;
+    background-color: aqua;
+}
+
+.bar-container{
+    height: 50px;
+    background-color: red;
+    width: 100px;
+}
